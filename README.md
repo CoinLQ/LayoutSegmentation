@@ -22,7 +22,9 @@
 ![带小字的列](https://raw.githubusercontent.com/dang-xia/LayoutSegmentation/master/samples/%E5%B8%A6%E5%B0%8F%E5%AD%97%E7%9A%84%E5%88%97.jpg)________![带小字的列划分后的结果](https://raw.githubusercontent.com/dang-xia/LayoutSegmentation/master/samples/%E5%B8%A6%E5%B0%8F%E5%AD%97%E7%9A%84%E5%88%97%E5%88%92%E5%88%86%E5%90%8E%E7%9A%84%E7%BB%93%E6%9E%9C.jpg)
 
 如上面第一张图是藏经图片中的某一列，对应的文本为：
-> 怛姪他<天可切後九篇初他><字悉同此音其一>富樓尼<念履切後九><篇音尼字悉>
+```
+怛姪他<天可切後九篇初他><字悉同此音其一>富樓尼<念履切後九><篇音尼字悉>
+```
 
 做版面划分后的结果如右边第二张图所示。实际输出每个区域对应的四个坐标值：left, right, top, bottom。区域在横轴的区间范围为[left, right)，纵轴的区间范围为[top, bottom)，坐标值为在整个图片中的坐标。
 
