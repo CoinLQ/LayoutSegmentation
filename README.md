@@ -19,7 +19,7 @@
 一般情况下，输出藏经图片中每一列的区域和对应的文本，如果这一列中有特殊文字，则需要将特殊文字区域及相应的文本输出。如上面提到的图片某一列中某一段位置有两列小字，在文本中用两组尖括号表示，如<卷第二十><第一百张>，则分别输出“卷第二十”对应的图片区域和“第一百张”对应的图片区域。
 
 ## 举例说明
-![alt tag](https://raw.githubusercontent.com/dang-xia/LayoutSegmentation/master/samples/%E5%B8%A6%E5%B0%8F%E5%AD%97%E7%9A%84%E5%88%97.jpg)        ![alt tag](https://raw.githubusercontent.com/dang-xia/LayoutSegmentation/master/samples/%E5%B8%A6%E5%B0%8F%E5%AD%97%E7%9A%84%E5%88%97%E5%88%92%E5%88%86%E5%90%8E%E7%9A%84%E7%BB%93%E6%9E%9C.jpg)
+![带小字的列](https://raw.githubusercontent.com/dang-xia/LayoutSegmentation/master/samples/%E5%B8%A6%E5%B0%8F%E5%AD%97%E7%9A%84%E5%88%97.jpg)        ![带小字的列划分后的结果](https://raw.githubusercontent.com/dang-xia/LayoutSegmentation/master/samples/%E5%B8%A6%E5%B0%8F%E5%AD%97%E7%9A%84%E5%88%97%E5%88%92%E5%88%86%E5%90%8E%E7%9A%84%E7%BB%93%E6%9E%9C.jpg)
 
 如上面第一张图是藏经图片中的某一列，对应的文本为：
 > 怛姪他<天可切後九篇初他><字悉同此音其一>富樓尼<念履切後九><篇音尼字悉>
