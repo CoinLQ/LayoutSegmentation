@@ -1,0 +1,53 @@
+﻿[{
+    "text": "怛姪他",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "line_no": 1,
+    "region_no": 1
+}, {
+    "text": "天可切後九篇初他",
+    "mark": "<",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "line_no": 1,
+    "region_no": 2
+}, {
+    "text": "字悉同此音其一",
+    "mark": "<",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "line_no": 1,
+    "region_no": 3
+}, {
+    "text": "富樓尼",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "line_no": 1,
+    "region_no": 4
+}, {
+    "text": "念履切後九",
+    "mark": "<",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "line_no": 1,
+    "region_no": 5
+}, {
+    "text": "篇音尼字悉",
+    "mark": "<",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "line_no": 1,
+    "region_no": 6
+}]
