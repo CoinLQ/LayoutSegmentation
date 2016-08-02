@@ -17,6 +17,8 @@
 ## 举例说明
 如右边第一张图是藏经图片中的某一列，对应的文本为：
 怛姪他<天可切後九篇初他><字悉同此音其一>富樓尼<念履切後九><篇音尼字悉>
+![alt tag](https://raw.githubusercontent.com/dang-xia/LayoutSegmentation/master/samples/%E5%B8%A6%E5%B0%8F%E5%AD%97%E7%9A%84%E5%88%97.jpg)
+![alt tag](https://raw.githubusercontent.com/dang-xia/LayoutSegmentation/master/samples/%E5%B8%A6%E5%B0%8F%E5%AD%97%E7%9A%84%E5%88%97%E5%88%92%E5%88%86%E5%90%8E%E7%9A%84%E7%BB%93%E6%9E%9C.jpg)
 做版面划分后的结果如右边第二张图所示。实际输出每个区域对应的四个坐标值：left, right, top, bottom。区域在横轴的区间范围为[left, right)，纵轴的区间范围为[top, bottom)，坐标值为在整个图片中的坐标。
 程序在实际执行时，输入一个图片文件和一个文本文件，输出一个json格式的数组，表示每个区域的坐标及相应的文本，其中对应每一个区域，包含这些字段：
 text，表示区域的文本；
@@ -28,6 +30,7 @@ bottom，下边界坐标；
 line_no，表示行号；
 region_no，表示在一行中区域的编号，从１开始计数。
 比如输入样本中的2.jpg和2.txt，输出的json格式文本为：
+```json
 [{
     "text": "怛姪他",
     "left": 21,
@@ -81,4 +84,5 @@ region_no，表示在一行中区域的编号，从１开始计数。
     "line_no": 1,
     "region_no": 6
 }]
+```
 可参考文件samples目录中的文件2_output_json.txt。
