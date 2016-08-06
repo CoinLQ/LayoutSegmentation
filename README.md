@@ -107,3 +107,87 @@
 }]
 ```
 可参考文件samples目录中的文件1_output_json.txt。
+
+------
+
+# 字切分
+这一步将版面切分输出的区域进一步切分到单个字。
+## 输入
+一张藏经图片和版面划分输出的某个区域的json描述，例如图片为样本中的1.jpg，区域的json描述为：
+```json
+{
+    "text": "怛姪他",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "line_no": 19,
+    "region_no": 1,
+    "page_bar_no": "P1L3/3"
+}
+```
+## 输出
+输出一个json格式的数组，表示每个字的图片区域的坐标及相关的信息，其中对应每一个字的图片区域，包含这些字段：
+- char，表示汉字；
+- left，左边界坐标；
+- right，右边界坐标；
+- top，上边界坐标；
+- bottom，下边界坐标；
+- mark，与输入的区域的json描述中相应的字段相同，如输入的区域的json描述中无此字段，则忽略；
+- line_no，与输入的区域的json描述中相应的字段相同；
+- region_no，与输入的区域的json描述中相应的字段相同；
+- page_bar_no，与输入的区域的json描述中相应的字段相同。
+请参考（坐标值非实际数值）：
+```json
+[{
+    "char": "篇",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "mark": "<",
+    "line_no": 19,
+    "region_no": 1,
+    "page_bar_no": "P1L3/3"
+}, {
+    "char": "音",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "mark": "<",
+    "line_no": 19,
+    "region_no": 1,
+    "page_bar_no": "P1L3/3"
+}, {
+    "char": "尼",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "mark": "<",
+    "line_no": 19,
+    "region_no": 1,
+    "page_bar_no": "P1L3/3"
+}, {
+    "char": "字",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "mark": "<",
+    "line_no": 19,
+    "region_no": 1,
+    "page_bar_no": "P1L3/3"
+}, {
+    "char": "悉",
+    "left": 21,
+    "right": 71,
+    "top": 1,
+    "bottom": 50,
+    "mark": "<",
+    "line_no": 19,
+    "region_no": 1,
+    "page_bar_no": "P1L3/3"
+}]
+```
